@@ -6,16 +6,16 @@ function ScrollEffect() {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setIsVisible(true); // スクロール位置が100pxを超えたら
+        setIsVisible(true);
       } else {
-        setIsVisible(false); // スクロール位置が100px未満になったら
+        setIsVisible(false);
       }
     };
 
-    window.addEventListener('scroll', handleScroll); // スクロールイベントを監視
+    window.addEventListener('scroll', handleScroll); 
 
     return () => {
-      window.removeEventListener('scroll', handleScroll); // クリーンアップ
+      window.removeEventListener('scroll', handleScroll); 
     };
   }, []);
 
@@ -23,7 +23,7 @@ function ScrollEffect() {
     <div
       style={{
         opacity: isVisible ? 1 : 0,
-        transition: 'opacity 1s ease', // フェードイン効果
+        transition: 'opacity 1s ease', 
       }}
     >
       <h1>スクロールで表示されるコンテンツ</h1>

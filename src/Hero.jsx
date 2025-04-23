@@ -13,13 +13,13 @@ const Container = styled.section`
     text-align: center;
   
     h1{
-        font-size: 1rem;
+        font-size: 4rem;
         margin-bottom: 1rem;
     }
 
     p {
-        font-size: 4rem;
-        line-height: 1.5;
+        font-size: 7rem;
+        line-height: 2.5;
     }
 `;
 
@@ -32,7 +32,7 @@ const Hero = () => {
         transition={{ duration: 1.2 }}
       >
         <h1>ようこそ</h1>
-        <p></p>
+        <p>RoseBerryのポートフォリオへ</p>
       </motion.div>
     </Container>
   );
