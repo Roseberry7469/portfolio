@@ -3,14 +3,24 @@ import { motion } from "framer-motion";
 import styled from "styled-components";
 
 const Container = styled.section`
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  color: white;
-  font-size: 3rem;
-  text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+  
+    h1{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
 `;
 
 const Hero = () => {
@@ -21,8 +31,8 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
       >
-        <h1>こんにちは、私は◯◯です</h1>
-        <p>ReactでApple風ポートフォリオを作成中。</p>
+        <h1>ようこそ</h1>
+        <p></p>
       </motion.div>
     </Container>
   );
